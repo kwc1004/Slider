@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider_Test</title>
+</head>
+<style>
+	div,img,button,span{margin: 0;padding: 0;}
+	#wrap{border: 2px solid; width: 500px; overflow: hidden;}
+	#sliderWrap{
+		width:9999px;font-size:0;
+		transition: 1s transform;
+
+	}
+	
+	#sliderWrap img{display: inline-block; outline: none;}
+	#div_nav{
+		width:500px;height:50px;
+		box-sizing: border-box;
+	}
+	#prev,#next,#pos{
+		line-height:45px;
+		font-size:32px; 
+		text-align:center;
+		display:inline-block;}
+	#prev,#next{
+		width:200px; height:50px; 
+		background-color:gray;
+		cursor:pointer;
+	}
+	#pos{
+		width:108px; 
+		height:50px;
+		background-color: lightgray;
+		margin:0px -10px;
+	}
+	
+
+</style>
+<body>
+	<div id="wrap">
+		<div id="sliderWrap">
+			<img src="http://lorempixel.com/500/400/?1" >
+			<img src="http://lorempixel.com/500/400/?2" >
+			<img src="http://lorempixel.com/500/400/?3" >
+			<img src="http://lorempixel.com/500/400/?4" >
+			<img src="http://lorempixel.com/500/400/?5" >
+		</div>
+		<div id="dir_nav">
+			<div id="prev">&lt</div>
+			<div id="pos"><span id="cur">1</span>/<span id="total">2</span>
+			</div>
+			<div id="next">&gt</div>
+		</div>	
+	</div>
+	<script src="slider.js"></script>
+</body>
+</html>
