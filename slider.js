@@ -44,8 +44,7 @@ function childNodeCount(){
 })();
 function display(){
 	var cur = document.querySelector("#cur");
-	var total = document.querySelector("#total");
-	//if(curChild < 1 || curChild > imageCount){cur.style.color="#ccc";}	
+	var total = document.querySelector("#total");	
 	cur.innerHTML=curChild;
 	total.innerHTML=imageCount;
 }
