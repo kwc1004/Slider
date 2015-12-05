@@ -40,11 +40,7 @@ function childNodeCount(){
 	var next = document.querySelector("#next");
 	document.querySelector("#cur").innerHTML=1;
 	document.querySelector("#total").innerHTML=imageCount;
-//	next.removeEventListener("click", function(){
-//	e.preventDefault();
 	next.style.visibility = 'hidden';
-
-// });
 })();
 function display(){
 	var cur = document.querySelector("#cur");
